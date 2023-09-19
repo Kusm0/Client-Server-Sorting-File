@@ -1,0 +1,3 @@
+C:/Users/jeffe/CLionProjects/Client_GL/cmake-build-debug/CMakeFiles/Server_GL.dir
+C:/Users/jeffe/CLionProjects/Client_GL/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/jeffe/CLionProjects/Client_GL/cmake-build-debug/CMakeFiles/rebuild_cache.dir
