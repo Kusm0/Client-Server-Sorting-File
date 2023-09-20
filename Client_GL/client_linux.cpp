@@ -18,7 +18,8 @@ int main() {
     sockaddr_in serverAddr;
     serverAddr.sin_family = AF_INET;
     serverAddr.sin_port = htons(8080);
-    if (inet_pton(AF_INET, "127.0.0.1", &(serverAddr.sin_addr)) != 1) {
+    if (inet_pton(AF_INET, "127.0.0.1", &(serverAddr.sin_addr)) != 1) // change "127.0.0.1" on your server ip
+    {
         std::cerr << "Invalid address" << std::endl;
         close(clientSocket);
         return 1;
