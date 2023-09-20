@@ -29,7 +29,8 @@ int main() {
     sockaddr_in serverAddr;
     serverAddr.sin_family = AF_INET;
     serverAddr.sin_port = htons(8080);
-    if (InetPton(AF_INET, _T("192.168.0.113"), &serverAddr.sin_addr) != 1) {
+    if (InetPton(AF_INET, _T("192.168.0.113"), &serverAddr.sin_addr) != 1) // change "127.0.0.1" on your server ip
+    {
         std::cerr << "Invalid address: " << WSAGetLastError() << std::endl;
         closesocket(clientSocket);
         WSACleanup();
