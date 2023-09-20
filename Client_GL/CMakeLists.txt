@@ -11,4 +11,4 @@ elseif(UNIX)
     set(SOURCES client_linux.cpp)
 endif()
 
-add_executable(Server_GL ${SOURCES})
+add_executable(Client_GL ${SOURCES})
