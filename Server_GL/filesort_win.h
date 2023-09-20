@@ -77,7 +77,7 @@ void ListFiles(const std::string& folderPath, std::vector<FileInfo>& fileList, i
     FindClose(hFind);
 }
 
-std::string SortAndPrintFiles(const std::vector<FileInfo>& fileList, int sortingOption, SOCKET clientSocket ) {
+std::string SortAndPrintFiles(const std::vector<FileInfo>& fileList, int sortingOption) {
     std::vector<FileInfo> sortedList = fileList;
     std::string resp;
     if (sortingOption == 1) {
@@ -109,7 +109,7 @@ std::string execute(int sortingOption) {
     int fileCount = 0;
     ListFiles(folderPath, fileList, fileCount);
 
-    std::string sorted_files_string = SortAndPrintFiles(fileList, sortingOption, clientSocket);
+    std::string sorted_files_string = SortAndPrintFiles(fileList, sortingOption);
 
     sorted_files_string += "Total files:" + std::to_string(fileCount) + "\n";
 
